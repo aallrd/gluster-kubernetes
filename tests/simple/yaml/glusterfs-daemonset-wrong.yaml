@@ -17,7 +17,7 @@ metadata:
         storagenode: glusterfs
       hostNetwork: true
       containers:
-      - image: gluster/gluster-centos:latest
+      - image: aallrd/gluster-centos:latest
         imagePullPolicy: IfNotPresent
         name: glusterfs
         volumeMounts:
@@ -43,8 +43,8 @@ metadata:
         storagenode: glusterfs
       hostNetwork: true
       containers:
-      - image: gluster/gluster-centos:latest
-        imagePullPolicy: IfNotPresent
+      - image: aallrd/gluster-centos:latest
+        imagePullPolicy: Always
         name: glusterfs
         volumeMounts:
         - name: glusterfs-heketi

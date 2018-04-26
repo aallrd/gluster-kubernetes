@@ -33,8 +33,8 @@ objects:
           storagenode: ${NODE_LABEL}
         hostNetwork: true
         containers:
-        - image: gluster/gluster-centos:latest
-          imagePullPolicy: IfNotPresent
+        - image: aallrd/gluster-centos:latest
+          imagePullPolicy: Always
           name: glusterfs
           env:
           - name: GB_GLFS_LRU_COUNT
