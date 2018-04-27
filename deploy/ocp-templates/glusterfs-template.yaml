@@ -79,7 +79,7 @@ objects:
             initialDelaySeconds: 40
             exec:
               command:
-              - "/bin/bash"
+              - "/usr/bin/bash"
               - "-c"
               - systemctl status glusterd.service
             periodSeconds: 25
@@ -90,7 +90,7 @@ objects:
             initialDelaySeconds: 40
             exec:
               command:
-              - "/bin/bash"
+              - "/usr/bin/bash"
               - "-c"
               - systemctl status glusterd.service
             periodSeconds: 25
